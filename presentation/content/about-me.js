@@ -19,7 +19,7 @@ export default class Interactive extends Component {
       <div>
         <Heading size={6} textColor="secondary">Sobre mí</Heading>
         <List textFont="secondary" lineHeight={1}>
-          <ListItem textSize={50}>Fullstack Developer - SimpliRoute
+          <ListItem textSize={60} textFont="pixelDingbats">Fullstack Developer - SimpliRoute
             <Appear>
               <List>
                 <ListItem>ExtJS</ListItem>
