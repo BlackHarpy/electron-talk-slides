@@ -4,7 +4,7 @@ import { Heading, Appear, Text } from "spectacle";
 import Bullet from "../pixel-elements/bullets";
 import Logo from "../pixel-elements/logo";
 
-export default class Interactive extends Component {
+export default class AboutMe1 extends Component {
   constructor() {
     super();
     this.state = {

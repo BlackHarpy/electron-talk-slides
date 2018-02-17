@@ -1,6 +1,7 @@
 // Import React
 import React from "react";
-import AboutMe from "./content/about-me";
+import AboutMe1 from "./content/01-about-me-1";
+import AboutMe2 from "./content/02-about-me-2";
 
 // Import Spectacle Core tags
 import {
@@ -8,8 +9,6 @@ import {
   Cite,
   Deck,
   Heading,
-  ListItem,
-  List,
   Quote,
   Slide,
   Text
@@ -47,16 +46,10 @@ export default class Presentation extends React.Component {
           </Heading>
         </Slide>
         <Slide transition={["fade"]} bgColor="primary" textColor="tertiary">
-          <AboutMe />
+          <AboutMe1 />
         </Slide>
         <Slide transition={["fade"]} bgColor="primary" textColor="tertiary">
-          <Heading size={6} textColor="secondary" caps>Standard List</Heading>
-          <List>
-            <ListItem>Item 1</ListItem>
-            <ListItem>Item 2</ListItem>
-            <ListItem>Item 3</ListItem>
-            <ListItem>Item 4</ListItem>
-          </List>
+          <AboutMe2 />
         </Slide>
         <Slide transition={["fade"]} bgColor="secondary" textColor="primary">
           <BlockQuote>
