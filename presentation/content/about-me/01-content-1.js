@@ -1,8 +1,8 @@
 import React, { Component } from "react";
 import { Heading, Appear, Text } from "spectacle";
 
-import Bullet from "../pixel-elements/bullets";
-import Logo from "../pixel-elements/logo";
+import Bullet from "../../pixel-elements/bullets";
+import Logo from "../../pixel-elements/logo";
 
 export default class AboutMe1 extends Component {
   constructor() {

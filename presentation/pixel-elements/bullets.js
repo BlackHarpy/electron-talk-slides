@@ -4,7 +4,7 @@ import PropTypes from "prop-types";
 export default class Bullet extends Component {
   createStyle() {
     const style = {
-      fontFamily: "pixelDingbats"
+      fontFamily: "PixelDingbats"
     };
     if (this.props.color) {
       style.color = this.props.color;
