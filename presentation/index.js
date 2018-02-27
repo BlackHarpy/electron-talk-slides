@@ -3,6 +3,9 @@ import React from "react";
 import Title from "./content/title/01-content";
 import AboutMe1 from "./content/about-me/01-content-1";
 import AboutMe2 from "./content/about-me/02-content-2";
+import AboutElectron1 from "./content/about-electron/01-content";
+import AboutElectron2 from "./content/about-electron/02-content";
+import AboutElectron3 from "./content/about-electron/03-content";
 
 // Import Spectacle Core tags
 import {
@@ -23,7 +26,7 @@ const theme = createTheme({
   primary: "#10162A",
   secondary: "#9EE9F8",
   tertiary: "#2BA2DA",
-  quarternary: "#CECECE"
+  quarternary: "#9EE9F8"
 }, {
   primary: "'Press Start 2P'",
   secondary: "VT323",
@@ -33,17 +36,26 @@ const theme = createTheme({
 export default class Presentation extends React.Component {
   render() {
     return (
-      <Deck transition={["zoom", "fade"]} transitionDuration={500} theme={theme}>
-        <Slide transition={["spin"]} bgColor="primary">
+      <Deck transition={["fade"]} transitionDuration={500} theme={theme}>
+        <Slide transition={["slide"]} transitionDuration={2000} bgColor="primary">
           <Title />
         </Slide>
-        <Slide transition={["fade"]} bgColor="primary" textColor="tertiary">
+        <Slide bgColor="primary" textColor="tertiary">
           <AboutMe1 />
         </Slide>
-        <Slide transition={["fade"]} bgColor="primary" textColor="tertiary">
+        <Slide bgColor="primary" textColor="tertiary">
           <AboutMe2 />
         </Slide>
-        <Slide transition={["fade"]} bgColor="secondary" textColor="primary">
+        <Slide bgColor="primary" textColor="tertiary" style={{ display: "flex", alignItems: "flex-start" }}>
+          <AboutElectron1 />
+        </Slide>
+        <Slide bgColor="primary" textColor="tertiary" style={{ display: "flex", alignItems: "flex-start" }}>
+          <AboutElectron2 />
+        </Slide>
+        <Slide bgColor="primary" textColor="tertiary" style={{ display: "flex", alignItems: "flex-start" }}>
+          <AboutElectron3 />
+        </Slide>
+        <Slide bgColor="secondary" textColor="primary">
           <BlockQuote>
             <Quote>Example Quote</Quote>
             <Cite>Author</Cite>

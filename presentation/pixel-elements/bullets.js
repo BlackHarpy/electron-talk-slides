@@ -18,7 +18,11 @@ export default class Bullet extends Component {
     const handler = {
       circle1: "À",
       diamond: "^",
-      heart: "["
+      heart: "[",
+      window: "µ",
+      home: "Õ",
+      sword: "ê",
+      module: "Z"
     };
     return handler[this.props.type];
   }
