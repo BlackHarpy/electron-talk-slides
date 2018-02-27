@@ -1,11 +1,12 @@
 // Import React
 import React from "react";
-import Title from "./content/title/01-content";
-import AboutMe1 from "./content/about-me/01-content-1";
-import AboutMe2 from "./content/about-me/02-content-2";
-import AboutElectron1 from "./content/about-electron/01-content";
-import AboutElectron2 from "./content/about-electron/02-content";
-import AboutElectron3 from "./content/about-electron/03-content";
+import Title from "./content/01-title/01-content";
+import AboutMe1 from "./content/02-about-me/01-content-1";
+import AboutMe2 from "./content/02-about-me/02-content-2";
+import AboutElectron1 from "./content/03-about-electron/01-content";
+import AboutElectron2 from "./content/03-about-electron/02-content";
+import AboutElectron3 from "./content/03-about-electron/03-content";
+import AboutElectron4 from "./content/03-about-electron/04-content";
 
 // Import Spectacle Core tags
 import {
@@ -54,6 +55,9 @@ export default class Presentation extends React.Component {
         </Slide>
         <Slide bgColor="primary" textColor="tertiary" style={{ display: "flex", alignItems: "flex-start" }}>
           <AboutElectron3 />
+        </Slide>
+        <Slide bgColor="primary" textColor="tertiary" style={{ display: "flex", alignItems: "flex-start" }}>
+          <AboutElectron4 />
         </Slide>
         <Slide bgColor="secondary" textColor="primary">
           <BlockQuote>

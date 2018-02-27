@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Heading, Text } from "spectacle";
+import { Heading } from "spectacle";
 
 import Bullet from "../../pixel-elements/bullets";
 import Logo from "../../pixel-elements/logo";
@@ -27,7 +27,7 @@ const style = {
     flexDirection: "column"
   }
 };
-export default class AboutElectron3 extends Component {
+export default class AboutElectron4 extends Component {
   constructor() {
     super();
   }
