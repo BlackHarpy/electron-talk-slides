@@ -16,7 +16,7 @@ export const style = {
   arrowSection: {
     transform: "rotate(90deg)"
   },
-  rendererProcess: {
+  defaultContainer: {
     display: "flex",
     padding: 20,
     justifyContent: "center",
@@ -43,10 +43,14 @@ export const style = {
     textAlign: "left"
   },
   codeContainer: {
-    fontSize: 25
+    fontSize: 20
   },
   fileNameText: {
-    width: "100%",
-    textAlign: "left"
+    fontSize: 5,
+    textAlign: "left",
+    overflow: "hidden",
+    marginBottom: 10,
+    whiteSpace: "nowrap",
+    borderRight: "10px #9EE9F8 solid"
   }
 };

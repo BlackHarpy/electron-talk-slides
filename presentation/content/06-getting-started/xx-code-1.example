@@ -1,1 +1,8 @@
-$ npm install --save-dev electron
+//Recomendado
+$ npm install --save-dev electron 
+ //Instalación global
+$ npm install electron -g   
+//Por arquitectura       
+$ npm install --arch=ia32 electron  
+//Por plataforma
+$ npm install --platform=win32 electron   

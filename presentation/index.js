@@ -15,7 +15,7 @@ import { Architecture2, runMainProcessAnimation } from "./content/05-architectur
 import { Architecture3, runRendererProcessAnimation } from "./content/05-architecture/03-content";
 import { Architecture4 } from "./content/05-architecture/04-content";
 
-import { GettingStarted1 } from "./content/06-getting-started/01-content"
+import { GettingStarted1, runInstallingElectronAnimation } from "./content/06-getting-started/01-content"
 
 // Import Spectacle Core tags
 
@@ -86,7 +86,9 @@ export default class Presentation extends React.Component {
         <Slide transition={["fade"]} align="center flex-start">
           <Architecture4 />
         </Slide>
-        <Slide align="center flex-start">
+        <Slide align="center flex-start"
+          onActive={runInstallingElectronAnimation}
+        >
           <GettingStarted1 />
         </Slide>
         <Slide bgColor="secondary" textColor="primary">

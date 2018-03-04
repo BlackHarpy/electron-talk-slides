@@ -39,7 +39,7 @@ export default class Architecture1 extends Component {
           <div style={style.arrowSection}>
             <Bullet type="arrow" size={40} color="#9EE9F8" />
           </div>
-          <div style={style.rendererProcess}>
+          <div style={style.defaultContainer}>
             {setRendererIcons()}
           </div>
           <Text textFont="secondary" textColor="tertiary">

@@ -51,7 +51,7 @@ pre[class*="language-"] {
 }
 
 .token.tag, .token.operator, .token.number {
-  color: #66a329
+  color: #9EE9F8 !important;
 }
 
 .token.property, .token.function {

@@ -80,7 +80,7 @@ export class Architecture2 extends Component {
           <div style={style.arrowSection} id="arrow-section">
             <Bullet type="arrow" size={40} color="#9EE9F8" />
           </div>
-          <div style={style.rendererProcess} id="renderer-process">
+          <div style={style.defaultContainer} id="renderer-process">
             {setRendererIcons()}
           </div>
           <div id="renderer-process-text">
