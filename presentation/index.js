@@ -22,6 +22,7 @@ import { GettingStarted4, runHTMLFileAnimation } from "./content/06-getting-star
 import { GettingStarted5, runCommunicationAnimation } from "./content/06-getting-started/05-content";
 import { GettingStarted6, runCommunicationMethodsAnimation } from "./content/06-getting-started/06-content";
 import { GettingStarted7, runDistributingAnimation } from "./content/06-getting-started/07-content";
+import { GettingStarted8, runPackagesAnimation } from "./content/06-getting-started/08-content";
 
 // Import Spectacle Core tags
 
@@ -126,6 +127,11 @@ export default class Presentation extends React.Component {
           onActive={runDistributingAnimation}
         >
           <GettingStarted7 />
+        </Slide>
+        <Slide align="center flex-start" transition={["none"]}
+          onActive={runPackagesAnimation}
+        >
+          <GettingStarted8 />
         </Slide>
         <Slide bgColor="secondary" textColor="primary" transition={["none"]}>
           <BlockQuote>

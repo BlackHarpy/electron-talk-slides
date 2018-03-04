@@ -62,8 +62,8 @@ const computersSection = {
   display: "flex",
   justifyContent: "space-between",
   height: 300,
-  borderBottom: "3px #9EE9F8 solid"
-}
+  borderBottom: "3px #9EE9F8 dotted"
+};
 
 export class GettingStarted7 extends Component {
   constructor() {
@@ -114,7 +114,6 @@ export class GettingStarted7 extends Component {
             </div>
           </div>
         </div>
-
       </div>
     );
   }
