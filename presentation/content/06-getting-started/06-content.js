@@ -34,6 +34,12 @@ export const runCommunicationMethodsAnimation = () => {
   });
 
   anime({
+    targets: [".renderer-process-arrows"],
+    opacity: 0,
+    easing: createSteppedEasing(3),
+    duration: 200
+  });
+  anime({
     targets: [".arrow-down", ".arrow-up", ".arrow-right"],
     translateX: "+=100",
     easing: createSteppedEasing(10),
