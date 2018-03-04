@@ -70,5 +70,9 @@ export const style = {
     marginBottom: 10,
     whiteSpace: "nowrap",
     borderRight: "10px #9EE9F8 solid"
+  },
+  link: {
+    color: "#9EE9F8",
+    textDecoration: "none"
   }
 };

@@ -3,7 +3,6 @@ import { Heading, Text } from "spectacle";
 
 import { style } from "../../styles/custom-styles";
 
-import Bullet from "../../pixel-elements/bullets";
 import { makeBulletList, createSteppedEasing } from "../../utils";
 
 import anime from "animejs";
