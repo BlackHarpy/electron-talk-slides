@@ -25,6 +25,7 @@ import { GettingStarted7, runDistributingAnimation } from "./content/06-getting-
 import { GettingStarted8, runPackagesAnimation } from "./content/06-getting-started/08-content";
 
 import { TheEnd1, runInterestingLinksAnimation } from "./content/07-the-end/01-content";
+import { TheEnd2, runThankYouAnimation } from "./content/07-the-end/02-content";
 
 // Import Spectacle Core tags
 
@@ -140,11 +141,10 @@ export default class Presentation extends React.Component {
         >
           <TheEnd1 />
         </Slide>
-        <Slide bgColor="secondary" textColor="primary" transition={["none"]}>
-          <BlockQuote>
-            <Quote>Example Quote</Quote>
-            <Cite>Author</Cite>
-          </BlockQuote>
+        <Slide bgColor="additional"
+          onActive={runThankYouAnimation}
+        >
+          <TheEnd2 />
         </Slide>
       </Deck>
     );
