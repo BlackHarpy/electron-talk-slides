@@ -10,6 +10,8 @@ import AboutElectron2 from "./content/03-about-electron/02-content";
 import AboutElectron3 from "./content/03-about-electron/03-content";
 import AboutElectron4 from "./content/03-about-electron/04-content";
 
+import { Why1 } from "./content/04-why/01-content";
+
 import Architecture1 from "./content/05-architecture/01-content";
 import { Architecture2, runMainProcessAnimation } from "./content/05-architecture/02-content";
 import { Architecture3, runRendererProcessAnimation } from "./content/05-architecture/03-content";
@@ -79,6 +81,9 @@ export default class Presentation extends React.Component {
         </Slide>
         <Slide>
           <AboutElectron4 />
+        </Slide>
+        <Slide>
+          <Why1 />
         </Slide>
         <Slide transitionOut={["none"]} align="center flex-start">
           <Architecture1 />
