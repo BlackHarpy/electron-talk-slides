@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import { Heading } from "spectacle";
 
-import Bullet from "../../pixel-elements/bullets";
 import Logo from "../../pixel-elements/logo";
 
 const style = {
