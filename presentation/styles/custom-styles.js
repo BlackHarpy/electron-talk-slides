@@ -13,6 +13,9 @@ export const style = {
     alignItems: "center",
     marginTop: 20
   },
+  subtitle: {
+    marginTop: 30
+  },
   arrowSection: {
     transform: "rotate(90deg)"
   },

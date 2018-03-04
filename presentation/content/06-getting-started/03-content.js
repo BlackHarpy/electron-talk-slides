@@ -7,12 +7,6 @@ import { createSteppedEasing } from "../../utils";
 
 import anime from "animejs";
 
-const slideStyle = {
-  subtitle: {
-    marginTop: 30
-  }
-};
-
 export const runMainFileAnimation = () => {
   const timeline = anime.timeline();
   timeline.add({
@@ -44,7 +38,7 @@ export class GettingStarted3 extends Component {
     return (
       <div style={style.main}>
         <Heading size={6} textColor="secondary">Creando una Aplicación Electron</Heading>
-        <Text style={slideStyle.subtitle} textSize={40} textColor="additional">Clase BrowserWindow</Text>
+        <Text style={style.subtitle} textSize={40} textColor="additional">Clase BrowserWindow</Text>
         <div style={customContentStyle}>
           <div id="file-text" style={style.fileNameText} >
             <Text textFont="secondary" textColor="additional" textSize={40} >{">"} ./main.js</Text>

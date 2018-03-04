@@ -5,15 +5,7 @@ import { style } from "../../styles/custom-styles";
 
 import { createSteppedEasing } from "../../utils";
 
-import Bullet from "../../pixel-elements/bullets";
 import anime from "animejs";
-
-const slideStyle = {
-  subtitle: {
-    marginTop: 30
-  }
-};
-
 
 export const runInstallingElectronAnimation = () => {
   const timeline = anime.timeline();
@@ -46,7 +38,7 @@ export class GettingStarted1 extends Component {
     return (
       <div style={style.main}>
         <Heading size={6} textColor="secondary">Creando una Aplicación Electron</Heading>
-        <Text style={slideStyle.subtitle} textSize={40} textColor="additional">Cómo empezar</Text>
+        <Text style={style.subtitle} textSize={40} textColor="additional">Cómo empezar</Text>
         <div style={customContentStyle}>
           <div id="file-text" style={style.fileNameText} >
             <Text textFont="secondary" textColor="additional" textSize={40} >{">"} Terminal de Node</Text>
