@@ -26,7 +26,6 @@ export const runHTMLFileAnimation = () => {
     duration: 500,
     offset: "+=300"
   });
-
 };
 
 export class GettingStarted4 extends Component {

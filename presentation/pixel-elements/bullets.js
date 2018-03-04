@@ -24,7 +24,8 @@ export default class Bullet extends Component {
       sword: "ê",
       module: "Z",
       file: "Ö",
-      arrow: "È"
+      arrow: "È",
+      xmark: "n"
     };
     return handler[this.props.type];
   }

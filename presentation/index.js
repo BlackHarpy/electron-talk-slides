@@ -19,7 +19,7 @@ import { GettingStarted1, runInstallingElectronAnimation } from "./content/06-ge
 import { GettingStarted2, runPackageJsonAnimation } from "./content/06-getting-started/02-content";
 import { GettingStarted3, runMainFileAnimation } from "./content/06-getting-started/03-content";
 import { GettingStarted4, runHTMLFileAnimation } from "./content/06-getting-started/04-content";
-import { GettingStarted5 } from "./content/06-getting-started/05-content";
+import { GettingStarted5, runCommunicationAnimation } from "./content/06-getting-started/05-content";
 
 // Import Spectacle Core tags
 
@@ -111,7 +111,7 @@ export default class Presentation extends React.Component {
           <GettingStarted4 />
         </Slide>
         <Slide align="center flex-start" transition={["none"]}
-        >
+          onActive={runCommunicationAnimation}>
           <GettingStarted5 />
         </Slide>
         <Slide bgColor="secondary" textColor="primary" transition={["none"]}>
