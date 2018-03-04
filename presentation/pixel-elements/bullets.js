@@ -26,7 +26,8 @@ export default class Bullet extends Component {
       file: "Ö",
       arrow: "È",
       xmark: "n",
-      computer: "Ñ"
+      computer: "Ñ",
+      application: "™"
     };
     return handler[this.props.type];
   }

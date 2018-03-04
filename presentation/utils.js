@@ -13,11 +13,11 @@ export const createSteppedEasing = (steps) => {
   return "steppedEasing";
 }
 
-export const makeBulletList = (elements) => {
+export const makeBulletList = (elements, buletSize = 40) => {
   return elements.map((text, index) => {
     return (
       <div style={ style.bulletListItem } key={index}>
-        <Bullet type="circle1" size={40} color="#9EE9F8" />
+        <Bullet type="circle1" size={buletSize} color="#9EE9F8" />
         <Text textFont="secondary" textColor="tertiary" style={{ margin: 0 }}>
           {text}
         </Text>
