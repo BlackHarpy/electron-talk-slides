@@ -18,33 +18,34 @@ const setRendererIcons = () => {
   return icons;
 };
 
-export default class Architecture1 extends Component {
+export class GettingStarted5 extends Component {
   constructor() {
     super();
   }
   render() {
     return (
       <div style={style.main}>
-        <Heading size={6} textColor="secondary">Arquitectura</Heading>
+        <Heading size={6} textColor="secondary" fill fit>Creando una Aplicación Electron</Heading>
+        <Text style={style.subtitle} textSize={30} textColor="additional">Comunicación entre procesos</Text>
         <div style={style.content}>
           <div style={style.mainProcess}>
             <Bullet type="window" size={80} color="#9EE9F8" />
             <Text style={{ margin: 0 }} textFont="secondary" textColor="tertiary">
               <small>{"{main.js}"}</small>
             </Text>
-            <Text textFont="secondary" textColor="tertiary">
-              Main Process
-            </Text>
           </div>
-          <div style={style.arrowDown}>
-            <Bullet type="arrow" size={40} color="#9EE9F8" />
+          <div style={{ display: "flex", margin: 10 }}>
+            <div style={style.arrowDown}>
+              <Bullet type="arrow" size={40} color="#9EE9F8" />
+            </div>
+            <div style={style.arrowUp}>
+              <Bullet type="arrow" size={40} color="#9EE9F8" />
+            </div>
           </div>
+          
           <div style={style.defaultContainer}>
             {setRendererIcons()}
           </div>
-          <Text textFont="secondary" textColor="tertiary">
-            Renderer Process
-          </Text>
         </div>
       </div>
     );

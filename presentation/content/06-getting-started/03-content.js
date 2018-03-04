@@ -37,8 +37,8 @@ export class GettingStarted3 extends Component {
     const customContentStyle = { ...style.content, alignItems: "flex-start" };
     return (
       <div style={style.main}>
-        <Heading size={6} textColor="secondary">Creando una Aplicación Electron</Heading>
-        <Text style={style.subtitle} textSize={40} textColor="additional">Clase BrowserWindow</Text>
+        <Heading size={6} textColor="secondary" fill fit>Creando una Aplicación Electron</Heading>
+        <Text style={style.subtitle} textSize={30} textColor="additional">Clase BrowserWindow</Text>
         <div style={customContentStyle}>
           <div id="file-text" style={style.fileNameText} >
             <Text textFont="secondary" textColor="additional" textSize={40} >{">"} ./main.js</Text>

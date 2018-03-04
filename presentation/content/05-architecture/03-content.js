@@ -102,7 +102,7 @@ export class Architecture3 extends Component {
               Main Process
             </Text>
           </div>
-          <div style={style.arrowSection} id="arrow-section">
+          <div style={style.arrowDown} id="arrow-section">
             <Bullet type="arrow" size={40} color="#9EE9F8" />
           </div>
           <div style={style.defaultContainer} id="renderer-process">

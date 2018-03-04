@@ -16,8 +16,14 @@ export const style = {
   subtitle: {
     marginTop: 30
   },
-  arrowSection: {
+  arrowDown: {
     transform: "rotate(90deg)"
+  },
+  arrowUp: {
+    transform: "rotate(270deg)"
+  },
+  arrowLeft: {
+    transform: "rotate(180deg)"
   },
   defaultContainer: {
     display: "flex",
