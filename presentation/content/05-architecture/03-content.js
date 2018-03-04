@@ -46,7 +46,7 @@ export const runRendererProcessAnimation = () => {
     borderColor: "#10162A",
     duration: 500,
     easing: createSteppedEasing(10),
-    offset: "-=500"    
+    offset: "-=500"
   }).add({
     targets: ["#renderer-icon-1", "#renderer-process-text"],
     translateX: [0, -250],
@@ -54,7 +54,7 @@ export const runRendererProcessAnimation = () => {
     scale: [1, 1.5],
     duration: 500,
     easing: createSteppedEasing(10),
-    offset: "-=500"
+    offset: "+=300"
   }).add({
     targets: "#renderer-process-desc",
     height: [0, 400],

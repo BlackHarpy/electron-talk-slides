@@ -20,7 +20,7 @@ export const runCommunicationAnimation = () => {
     opacity: {
       value: [0, 1],
       duration: 200
-    },   
+    },
     height: [0, 250],
     duration: 500,
     easing: createSteppedEasing(10)
