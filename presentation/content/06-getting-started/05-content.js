@@ -34,7 +34,7 @@ export const runCommunicationAnimation = () => {
 
   timeline.finished.then(() => {
     anime({
-      targets: ["#arrow-down", "#arrow-up"],
+      targets: ["#arrow-down", "#arrow-up", "#arrow-right"],
       translateX: "+=100",
       easing: createSteppedEasing(10),
       duration: 1000,
@@ -61,22 +61,44 @@ export class GettingStarted5 extends Component {
         <Text style={style.subtitle} textSize={30} textColor="additional">Comunicación entre procesos</Text>
         <div style={style.content}>
           <div id="main-process-icon" style={style.mainProcess}>
-            <Bullet type="window" size={80} color="#9EE9F8" />
-            <Text style={{ margin: 0 }} textFont="secondary" textColor="tertiary">
-              <small>{"{main.js}"}</small>
-            </Text>
-          </div>
-          <div id="main-process-arrows" style={{ display: "flex", height: 50, margin: 10, overflow: "hidden" }}>
-            <div style={style.arrowDown}>
-              <div id="arrow-down">
-                <Bullet type="arrow" size={40} color="#9EE9F8" />
+            <div style={{ display: "flex" }}>
+              <div>
+                <Bullet type="window" size={80} color="#9EE9F8" />
+                <Text style={{ margin: 0 }} textFont="secondary" textColor="tertiary">
+                  <small>{"{main.js}"}</small>
+                </Text>
+                <div id="main-process-arrows" style={{ display: "flex", height: 50, margin: 10, overflow: "hidden" }}>
+                  <div style={style.arrowDown}>
+                    <div id="arrow-down">
+                      <Bullet type="arrow" size={40} color="#9EE9F8" />
+                    </div>
+                  </div>
+                  <div style={style.arrowUp}>
+                    <div id="arrow-up">
+                      <Bullet type="arrow" size={40} color="#9EE9F8" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div style={{
+                display: "flex",
+                marginLeft: 20,
+                justifyContent: "center" }}
+              >
+                <div style={{ overflow: "hidden", marginRight: 20, paddingTop: 20 }}>
+                  <div id="arrow-right">
+                    <Bullet type="arrow" size={40} color="#9EE9F8" />
+                  </div>
+                </div>
+                <div style={{ display: "flex", flexDirection: "column"}}>
+                  <Bullet type="computer" size={80} color="#9EE9F8" />
+                  <Text style={{ margin: 0 }} textFont="secondary" textColor="tertiary">
+                    <small>OS</small>
+                  </Text>
+                </div>
               </div>
             </div>
-            <div style={style.arrowUp}>
-              <div id="arrow-up">
-                <Bullet type="arrow" size={40} color="#9EE9F8" />
-              </div>
-            </div>
+            
           </div>
           <div id="renderers-container" style={style.defaultContainer}>
             <div id="renderers-elements" style={{ display: "flex" }} >
@@ -117,7 +139,6 @@ export class GettingStarted5 extends Component {
                 </Text>
               </div>
             </div>
-            
           </div>
         </div>
       </div>
