@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <meta charset="UTF-8">
+      <title>Electron App</title>
+      <script src="soy-un-script.js"></script>
+    </head>
+    <body>
+      <h1>¡Hola Mundo! :D</h1>
+      <p>Soy una página web muy sencilla :)<p>
+    </body>
+  </html>

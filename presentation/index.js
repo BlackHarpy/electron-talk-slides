@@ -15,7 +15,10 @@ import { Architecture2, runMainProcessAnimation } from "./content/05-architectur
 import { Architecture3, runRendererProcessAnimation } from "./content/05-architecture/03-content";
 import { Architecture4 } from "./content/05-architecture/04-content";
 
-import { GettingStarted1, runInstallingElectronAnimation } from "./content/06-getting-started/01-content"
+import { GettingStarted1, runInstallingElectronAnimation } from "./content/06-getting-started/01-content";
+import { GettingStarted2, runPackageJsonAnimation } from "./content/06-getting-started/02-content";
+import { GettingStarted3, runMainFileAnimation } from "./content/06-getting-started/03-content";
+import { GettingStarted4, runHTMLFileAnimation } from "./content/06-getting-started/04-content";
 
 // Import Spectacle Core tags
 
@@ -91,7 +94,22 @@ export default class Presentation extends React.Component {
         >
           <GettingStarted1 />
         </Slide>
-        <Slide bgColor="secondary" textColor="primary">
+        <Slide align="center flex-start" transition={["none"]}
+          onActive={runPackageJsonAnimation}
+        >
+          <GettingStarted2 />
+        </Slide>
+        <Slide align="center flex-start" transition={["none"]}
+          onActive={runMainFileAnimation}
+        >
+          <GettingStarted3 />
+        </Slide>
+        <Slide align="center flex-start" transition={["none"]}
+          onActive={runHTMLFileAnimation}
+        >
+          <GettingStarted4 />
+        </Slide>
+        <Slide bgColor="secondary" textColor="primary" transition={["none"]}>
           <BlockQuote>
             <Quote>Example Quote</Quote>
             <Cite>Author</Cite>

@@ -1,0 +1,16 @@
+const {app, BrowserWindow} = require('electron')
+  
+function createWindow () {
+  // Crear la ventana de navegador
+  win = new BrowserWindow({width: 800, height: 600})
+
+  // abrir el html de nuestra app
+  win.loadURL(url.format({
+    pathname: path.join(__dirname, 'index.html'),
+    protocol: 'file:',
+    slashes: true
+  }))
+}
+
+// Asociar al evento 'ready'
+app.on('ready', createWindow)

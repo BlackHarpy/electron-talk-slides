@@ -5,7 +5,6 @@ import { style } from "../../styles/custom-styles";
 
 import { createSteppedEasing } from "../../utils";
 
-import Bullet from "../../pixel-elements/bullets";
 import anime from "animejs";
 
 const slideStyle = {
@@ -14,17 +13,16 @@ const slideStyle = {
   }
 };
 
-
-export const runInstallingElectronAnimation = () => {
+export const runMainFileAnimation = () => {
   const timeline = anime.timeline();
   timeline.add({
     targets: "#file-text",
-    width: [0, "+=300"],
+    width: [0, "+=200"],
     duration: 500,
     easing: createSteppedEasing(10)
   }).add({
     targets: "#node-terminal",
-    height: [0, 370],
+    height: [0, 300],
     duration: 500,
     easing: createSteppedEasing(10)
   }).add({
@@ -37,7 +35,7 @@ export const runInstallingElectronAnimation = () => {
 
 };
 
-export class GettingStarted1 extends Component {
+export class GettingStarted3 extends Component {
   constructor() {
     super();
   }
@@ -46,18 +44,17 @@ export class GettingStarted1 extends Component {
     return (
       <div style={style.main}>
         <Heading size={6} textColor="secondary">Creando una Aplicación Electron</Heading>
-        <Text style={slideStyle.subtitle} textSize={40} textColor="additional">Cómo empezar</Text>
+        <Text style={slideStyle.subtitle} textSize={40} textColor="additional">Clase BrowserWindow</Text>
         <div style={customContentStyle}>
           <div id="file-text" style={style.fileNameText} >
-            <Text textFont="secondary" textColor="additional" textSize={40} >{">"} Terminal de Node</Text>
+            <Text textFont="secondary" textColor="additional" textSize={40} >{">"} ./main.js</Text>
           </div>
-          <div id="node-terminal" style={style.codeParentContainer}>
+          <div id="node-terminal" style={{...style.codeParentContainer }}>
             <div id="node-terminal-code">
               <CodePane
                 lang="javascript"
-                source={require("raw-loader!./xx-code-1.example")}
+                source={require("raw-loader!./xx-code-3.example")}
                 margin="20px auto"
-                overflow="hidden"
                 theme="external"
                 style={style.codeContainer}
               />

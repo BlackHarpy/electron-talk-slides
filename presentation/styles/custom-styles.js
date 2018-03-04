@@ -43,7 +43,16 @@ export const style = {
     textAlign: "left"
   },
   codeContainer: {
-    fontSize: 20
+    fontSize: 30,
+    maxHeight: 370
+  },
+  codeParentContainer: {
+    width: 900,
+    display: "flex",
+    padding: 20,
+    border: "3px #9EE9F8 solid",
+    alignItems: "flex-start",
+    overflow: "auto"
   },
   fileNameText: {
     fontSize: 5,
