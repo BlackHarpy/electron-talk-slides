@@ -1,6 +1,6 @@
 // Import React
 import React from "react";
-import CodeSlide from "spectacle-code-slide";
+import "./styles/code-theme.css";
 
 import Title from "./content/01-title/01-content";
 import AboutMe1 from "./content/02-about-me/01-content-1";

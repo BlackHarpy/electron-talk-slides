@@ -44,5 +44,9 @@ export const style = {
   },
   codeContainer: {
     fontSize: 25
+  },
+  fileNameText: {
+    width: "100%",
+    textAlign: "left"
   }
 };

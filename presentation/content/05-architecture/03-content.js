@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { Heading, Text } from "spectacle";
-import { style } from "../../styles";
+import { style } from "../../styles/custom-styles";
+
 
 import { makeBulletList, createSteppedEasing } from "../../utils";
 

@@ -1,3 +1,1 @@
-function hola () {
-  console.log('hola');
-}
+$ npm install --save-dev electron

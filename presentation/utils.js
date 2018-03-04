@@ -3,7 +3,7 @@ import { Text } from "spectacle";
 
 import anime from "animejs";
 
-import { style } from "./styles";
+import { style } from "./styles/custom-styles";
 import Bullet from "./pixel-elements/bullets";
 
 export const createSteppedEasing = (steps) => {
