@@ -74,5 +74,10 @@ export const style = {
   link: {
     color: "#9EE9F8",
     textDecoration: "none"
+  },
+  pixelImage: {
+    height: 70,
+    imageRendering: "pixelated",
+    margin: "0 20px"
   }
 };

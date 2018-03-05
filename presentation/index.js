@@ -2,7 +2,7 @@
 import React from "react";
 import "./styles/code-theme.css";
 
-import Title from "./content/01-title/01-content";
+import { Title, titleAnimation } from "./content/01-title/01-content";
 import AboutMe1 from "./content/02-about-me/01-content-1";
 import AboutMe2 from "./content/02-about-me/02-content-2";
 import AboutElectron1 from "./content/03-about-electron/01-content";
@@ -58,7 +58,7 @@ export default class Presentation extends React.Component {
   render() {
     return (
       <Deck transition={["fade"]} transitionDuration={500} theme={theme}>
-        <Slide transition={["slide"]} transitionDuration={2000}>
+        <Slide transition={["none"]} transitionDuration={2000} onActive={titleAnimation}>
           <Title />
         </Slide>
         <Slide transitionIn={["slide"]} transitionOut={["fade"]}>
