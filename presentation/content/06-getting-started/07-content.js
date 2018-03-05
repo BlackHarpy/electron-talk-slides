@@ -4,7 +4,7 @@ import { Heading, Text } from "spectacle";
 import { style } from "../../styles/custom-styles";
 
 import Bullet from "../../pixel-elements/bullets";
-import { makeBulletList, createSteppedEasing } from "../../utils";
+import { createSteppedEasing } from "../../utils";
 
 import anime from "animejs";
 
@@ -108,9 +108,24 @@ export class GettingStarted7 extends Component {
           </div>
           <div id="distribution-desc" style={{ ...style.rightContainer, position: "relative" }}>
             <div id="distribution-text">
-              {makeBulletList(["Descargar los binarios de Electron.",
-                "Trasladar los archivos fuentes a directorio de binarios (scripts o .asar).",
-                "Hay paquetes de NPM que se pueden encargar de este proceso"], 30)}
+              <div style={ style.bulletListItem }>
+                <Bullet type="circle1" size={40} color="#9EE9F8" />
+                <Text textFont="secondary" textColor="tertiary" style={{ margin: 0 }}>
+                Descargar los binarios de Electron.
+                </Text>
+              </div>
+              <div style={ style.bulletListItem }>
+                <Bullet type="circle1" size={40} color="#9EE9F8" />
+                <Text textFont="secondary" textColor="tertiary" style={{ margin: 0 }}>
+                Trasladar los archivos fuentes a directorio de binarios (scripts o .asar).
+                </Text>
+              </div>
+              <div style={ style.bulletListItem }>
+                <Bullet type="circle1" size={40} color="#9EE9F8" />
+                <Text textFont="secondary" textColor="tertiary" style={{ margin: 0 }}>
+                Hay paquetes de NPM que se pueden encargar de este proceso
+                </Text>
+              </div>
             </div>
           </div>
         </div>

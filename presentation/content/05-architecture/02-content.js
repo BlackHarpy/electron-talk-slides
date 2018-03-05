@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import { Heading, Text } from "spectacle";
 import { style } from "../../styles/custom-styles";
 
-import { makeBulletList, createSteppedEasing } from "../../utils";
+import { createSteppedEasing } from "../../utils";
 
 import Bullet from "../../pixel-elements/bullets";
 import anime from "animejs";
@@ -91,9 +91,24 @@ export class Architecture2 extends Component {
         </div>
         <div id="main-process-desc" style={style.rightContainer}>
           <div id="main-process-list">
-            {makeBulletList(["Maneja las páginas web de nuestra app.",
-              "Acceso a APIs nativas.",
-              <span>Sólo un proceso <i>main</i> por aplicación</span>])}
+            <div style={ style.bulletListItem }>
+              <Bullet type="circle1" size={40} color="#9EE9F8" />
+              <Text textFont="secondary" textColor="tertiary" style={{ margin: 0 }}>
+               Maneja las páginas web de nuestra app.
+              </Text>
+            </div>
+            <div style={ style.bulletListItem }>
+              <Bullet type="circle1" size={40} color="#9EE9F8" />
+              <Text textFont="secondary" textColor="tertiary" style={{ margin: 0 }}>
+                Acceso a APIs nativas.
+              </Text>
+            </div>
+            <div style={ style.bulletListItem }>
+              <Bullet type="circle1" size={40} color="#9EE9F8" />
+              <Text textFont="secondary" textColor="tertiary" style={{ margin: 0 }}>
+                <span>Sólo un proceso <i>main</i> por aplicación</span>
+              </Text>
+            </div>
           </div>
         </div>
       </div>

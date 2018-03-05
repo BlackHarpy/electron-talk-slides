@@ -32,10 +32,7 @@ import { TheEnd2, runThankYouAnimation } from "./content/07-the-end/02-content";
 // Import Spectacle Core tags
 
 import {
-  BlockQuote,
-  Cite,
   Deck,
-  Quote,
   Slide
 } from "spectacle";
 

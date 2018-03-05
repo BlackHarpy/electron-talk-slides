@@ -3,7 +3,7 @@ import { Heading } from "spectacle";
 
 import { style } from "../../styles/custom-styles";
 
-import { makeBulletList, createSteppedEasing } from "../../utils";
+import { createSteppedEasing } from "../../utils";
 
 import anime from "animejs";
 
@@ -27,7 +27,6 @@ export class Why1 extends Component {
         <div id="main-content" style={{ ...style.content, alignItems: "flex-start", marginTop: 100 }}>
           <img src="./assets/roast-1.png" />
           <img src="./assets/roast-2.png" />
-          <img src="./assets/roast-3.png" />
           <img src="./assets/roast-4.png" />
           <img src="./assets/roast-5.png" />
         </div>

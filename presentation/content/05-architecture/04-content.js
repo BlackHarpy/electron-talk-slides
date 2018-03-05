@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import { Heading, Text } from "spectacle";
 import { style } from "../../styles/custom-styles";
 
-import { makeBulletList, createSteppedEasing } from "../../utils";
+import { createSteppedEasing } from "../../utils";
 
 import Bullet from "../../pixel-elements/bullets";
 import anime from "animejs";

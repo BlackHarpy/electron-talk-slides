@@ -3,7 +3,7 @@ import { Heading, Text } from "spectacle";
 import { style } from "../../styles/custom-styles";
 
 
-import { makeBulletList, createSteppedEasing } from "../../utils";
+import { createSteppedEasing } from "../../utils";
 
 import Bullet from "../../pixel-elements/bullets";
 import anime from "animejs";
@@ -116,17 +116,52 @@ export class Architecture3 extends Component {
         </div>
         <div id="main-process-desc" style={style.rightContainer}>
           <div id="main-process-list">
-            {makeBulletList(["Maneja las páginas web de nuestra app.",
-              "Acceso a APIs nativas.",
-              <span>Sólo un proceso <i>main</i> por aplicación</span>])}
+            <div style={ style.bulletListItem }>
+              <Bullet type="circle1" size={40} color="#9EE9F8" />
+              <Text textFont="secondary" textColor="tertiary" style={{ margin: 0 }}>
+               Maneja las páginas web de nuestra app.
+              </Text>
+            </div>
+            <div style={ style.bulletListItem }>
+              <Bullet type="circle1" size={40} color="#9EE9F8" />
+              <Text textFont="secondary" textColor="tertiary" style={{ margin: 0 }}>
+                Acceso a APIs nativas.
+              </Text>
+            </div>
+            <div style={ style.bulletListItem }>
+              <Bullet type="circle1" size={40} color="#9EE9F8" />
+              <Text textFont="secondary" textColor="tertiary" style={{ margin: 0 }}>
+                <span>Sólo un proceso <i>main</i> por aplicación</span>
+              </Text>
+            </div>
           </div>
         </div>
         <div id="renderer-process-desc" style={style.rightContainer}>
           <div id="renderer-process-list">
-            {makeBulletList(["Muestra el contenido de una página web.",
-              "Acceso a APIs del DOM y del navegador.",
-              <span>Puede haber más de un proceso <i>renderer</i> por aplicación.</span>,
-              "Son independientes."])}
+            <div style={ style.bulletListItem }>
+              <Bullet type="circle1" size={40} color="#9EE9F8" />
+              <Text textFont="secondary" textColor="tertiary" style={{ margin: 0 }}>
+              Muestra el contenido de una página web.
+              </Text>
+            </div>
+            <div style={ style.bulletListItem }>
+              <Bullet type="circle1" size={40} color="#9EE9F8" />
+              <Text textFont="secondary" textColor="tertiary" style={{ margin: 0 }}>
+                Acceso a APIs del DOM y del navegador.
+              </Text>
+            </div>
+            <div style={ style.bulletListItem }>
+              <Bullet type="circle1" size={40} color="#9EE9F8" />
+              <Text textFont="secondary" textColor="tertiary" style={{ margin: 0 }}>
+                <span>Puede haber más de un proceso <i>renderer</i> por aplicación.</span>
+              </Text>
+            </div>
+            <div style={ style.bulletListItem }>
+              <Bullet type="circle1" size={40} color="#9EE9F8" />
+              <Text textFont="secondary" textColor="tertiary" style={{ margin: 0 }}>
+              Son independientes.
+              </Text>
+            </div>
           </div>
         </div>
       </div>
