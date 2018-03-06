@@ -16,7 +16,7 @@ export const runHTMLFileAnimation = () => {
     easing: createSteppedEasing(10)
   }).add({
     targets: "#node-terminal",
-    height: [0, 300],
+    height: [0, 370],
     duration: 500,
     easing: createSteppedEasing(10)
   }).add({
