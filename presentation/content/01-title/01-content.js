@@ -6,6 +6,11 @@ import anime from "animejs";
 import { createSteppedEasing } from "../../utils";
 import { style } from "../../styles/custom-styles";
 
+import electronLogo from "../../../assets/logos/electron.png";
+import twitterLogo from "../../../assets/logos/twitter.png";
+import githubLogo from "../../../assets/logos/github.png";
+import redditLogo from "../../../assets/logos/reddit.png";
+
 
 export const titleAnimation = () => {
 
@@ -97,7 +102,7 @@ export class Title extends Component {
 
         <div id="main-title" style={{ display: "flex" }}>
           <Text textColor="secondary" textFont="tertiary" textSize={60}>
-            <img style={{ ...style.pixelImage, height: 100, marginBottom: -18 }} src="../../../assets/logos/electron.png" />
+            <img style={{ ...style.pixelImage, height: 100, marginBottom: -18 }} src={electronLogo} />
             ELECTRON
           </Text>
         </div>
@@ -109,9 +114,9 @@ export class Title extends Component {
             @BlackHarpy
           </Text>
           <div style={{ marginTop: 40 }}>
-            <img style={style.pixelImage} src="../../../assets/logos/twitter.png" />
-            <img style={style.pixelImage} src="../../../assets/logos/github.png" />
-            <img style={style.pixelImage} src="../../../assets/logos/reddit.png" />
+            <img style={style.pixelImage} src={twitterLogo} />
+            <img style={style.pixelImage} src={githubLogo} />
+            <img style={style.pixelImage} src={redditLogo} />
           </div>
         </div>
        
