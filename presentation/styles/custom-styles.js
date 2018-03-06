@@ -95,5 +95,8 @@ export const style = {
     padding: 20,
     margin: "20px 10px",
     border: "3px #9EE9F8 solid"
+  },
+  image: {
+    width: 200
   }
 };

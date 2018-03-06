@@ -1,17 +1,11 @@
 import React, { Component } from "react";
-import { Heading } from "spectacle";
+import { Heading, Appear } from "spectacle";
 
 import { style } from "../../styles/custom-styles";
 
 import { createSteppedEasing } from "../../utils";
 
 import anime from "animejs";
-
-import roast1 from "../../../assets/roast-1.png";
-import roast2 from "../../../assets/roast-2.png";
-import roast3 from "../../../assets/roast-3.jpg";
-import roast4 from "../../../assets/roast-4.png";
-import roast5 from "../../../assets/roast-5.png";
 
 export const runInterestingLinksAnimation = () => {
   anime({
@@ -22,20 +16,76 @@ export const runInterestingLinksAnimation = () => {
   });
 };
 
+const styleImg = {
+  position: "absolute",
+  backgroundColor: "#10162A",
+  width: "100%",
+  height: 480
+}
+
 export class Why1 extends Component {
   constructor() {
     super();
   }
   render() {
     return (
-      <div style={style.main}>
+      <div style={{ ...style.main, alignItems: "center" }}>
         <Heading size={6} textColor="secondary" fill fit>Por qué usar (o no) Electron</Heading>
         <div id="main-content" style={{ ...style.content, alignItems: "flex-start", marginTop: 100 }}>
-          <img src={roast1}/>
-          <img src={roast2}/>
-          <img src={roast3}/>
-          <img src={roast4}/>
-          <img src={roast5}/>
+          <div style={{ display: "flex", alignContent: "center", justifyContent: "center" }}>
+            <Appear>
+              <div style={styleImg}>
+                <img src="https://image.ibb.co/eZ7aDS/roast_3.jpg" height="480" alt="roast_3" border="0" />
+              </div>
+            </Appear>
+            <Appear>
+              <div style={styleImg}>
+                <img src="https://image.ibb.co/gxfHSn/roast1.png" height="480" alt="roast1" border="0" />
+              </div>
+            </Appear>
+            <Appear>
+              <div style={styleImg}>
+                <img src="https://image.ibb.co/fJTCSn/roast_2.png" height="480" alt="roast_2" border="0" />
+              </div>
+            </Appear>
+            <Appear>
+              <div style={styleImg}>
+                <img src="https://image.ibb.co/dZ06L7/roast_4.png" height="480" alt="roast_2" border="0" />
+              </div>
+            </Appear>
+            <Appear>
+              <div style={styleImg}>
+                <img src="https://image.ibb.co/m1bP7n/roast_5.png" width="600" alt="roast_2" border="0" />
+              </div>
+            </Appear>
+            <Appear>
+              <div style={styleImg}>
+                <img src="https://image.ibb.co/hftt07/roast_7.png" height="480" alt="roast_2" border="0" />
+              </div>
+            </Appear>
+            <Appear>
+              <div style={styleImg}>
+                <img src="https://image.ibb.co/gELTYS/roast_6.png" height="180" alt="roast_2" border="0" />
+                <img src="https://image.ibb.co/e5nLf7/roast_8.png" height="180" alt="roast_2" border="0" />
+              </div>
+            </Appear>
+            <Appear>
+              <div style={styleImg}>
+                <img src="https://image.ibb.co/iafvDS/roast_9.png" height="180" alt="roast_2" border="0" />
+                <img src="https://image.ibb.co/hMnaDS/roast_10.png" height="180" alt="roast_2" border="0" />
+              </div>
+            </Appear>
+            
+          </div>
+
+          {/* <img src="https://image.ibb.co/dZ06L7/roast_4.png" alt="roast_4" border="0" /> */}
+          {/* <img src="https://image.ibb.co/m1bP7n/roast_5.png" alt="roast_5" border="0" />
+          <img src="https://image.ibb.co/gELTYS/roast_6.png" alt="roast_6" border="0" />
+          <img src="https://image.ibb.co/hftt07/roast_7.png" alt="roast_7" border="0" />
+          <img src="https://image.ibb.co/e5nLf7/roast_8.png" alt="roast_8" border="0" />
+          <img src="https://image.ibb.co/iafvDS/roast_9.png" alt="roast_9" border="0" />
+          <img src="https://image.ibb.co/hMnaDS/roast_10.png" alt="roast_10" border="0" />
+         */}
         </div>
       </div>
     );
