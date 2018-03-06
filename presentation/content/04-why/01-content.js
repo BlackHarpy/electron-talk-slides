@@ -75,17 +75,7 @@ export class Why1 extends Component {
                 <img src="https://image.ibb.co/hMnaDS/roast_10.png" height="180" alt="roast_2" border="0" />
               </div>
             </Appear>
-            
           </div>
-
-          {/* <img src="https://image.ibb.co/dZ06L7/roast_4.png" alt="roast_4" border="0" /> */}
-          {/* <img src="https://image.ibb.co/m1bP7n/roast_5.png" alt="roast_5" border="0" />
-          <img src="https://image.ibb.co/gELTYS/roast_6.png" alt="roast_6" border="0" />
-          <img src="https://image.ibb.co/hftt07/roast_7.png" alt="roast_7" border="0" />
-          <img src="https://image.ibb.co/e5nLf7/roast_8.png" alt="roast_8" border="0" />
-          <img src="https://image.ibb.co/iafvDS/roast_9.png" alt="roast_9" border="0" />
-          <img src="https://image.ibb.co/hMnaDS/roast_10.png" alt="roast_10" border="0" />
-         */}
         </div>
       </div>
     );

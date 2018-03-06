@@ -11,6 +11,8 @@ import AboutElectron3 from "./content/03-about-electron/03-content";
 import AboutElectron4 from "./content/03-about-electron/04-content";
 
 import { Why1 } from "./content/04-why/01-content";
+import { Why2, runGoodStuffAnimation } from "./content/04-why/02-content";
+import { Why3, runGoodStuffAnimation2 } from "./content/04-why/03-content";
 
 import Architecture1 from "./content/05-architecture/01-content";
 import { Architecture2, runMainProcessAnimation } from "./content/05-architecture/02-content";
@@ -81,6 +83,12 @@ export default class Presentation extends React.Component {
         </Slide>
         <Slide align="center flex-start">
           <Why1 />
+        </Slide>
+        <Slide align="center flex-start" onActive={runGoodStuffAnimation}>
+          <Why2 />
+        </Slide>
+        <Slide align="center flex-start" onActive={runGoodStuffAnimation}>
+          <Why3 />
         </Slide>
         <Slide align="center flex-start">
           <Architecture1 />
