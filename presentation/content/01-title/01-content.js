@@ -94,7 +94,7 @@ export class Title extends Component {
             </Text>
           </div>
           <div id="final-text" style={{ ...style.fileNameText, marginTop: 9, marginBottom: 0 }}>
-            <Text textColor="tertiary" textFont="secondary"  textSize={39}>
+            <Text textColor="tertiary" textFont="secondary" textSize={39}>
               Construyendo Aplicaciones Web para Escritorio con
             </Text>
           </div>
@@ -114,9 +114,9 @@ export class Title extends Component {
             @BlackHarpy
           </Text>
           <div style={{ marginTop: 40 }}>
-            <img style={style.pixelImage} src={twitterLogo} />
-            <img style={style.pixelImage} src={githubLogo} />
-            <img style={style.pixelImage} src={redditLogo} />
+            <a href="https://twitter.com/BlackHarpy" target="_blank"><img style={style.pixelImage} src={twitterLogo} /></a>
+            <a href="https://github.com/BlackHarpy" target="_blank"><img style={style.pixelImage} src={githubLogo} /></a>
+            <a href="https://www.reddit.com/user/BlackHarpy/" target="_blank"><img style={style.pixelImage} src={redditLogo} /></a>
           </div>
         </div>
        
