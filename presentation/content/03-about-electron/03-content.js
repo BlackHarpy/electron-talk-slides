@@ -3,27 +3,12 @@ import { Heading } from "spectacle";
 
 import Logo from "../../pixel-elements/logo";
 
-const style = {
-  main: {
-    display: "flex",
-    justifyContent: "center",
-    alignItems: "center",
-    flexDirection: "column"
-  },
-  content: {
-    marginTop: 100,
-    display: "flex",
-    justifyContent: "center",
-    alignItems: "center"
-  },
-  logos: {
-    display: "flex",
-    padding: 40,
-    justifyContent: "center",
-    alignItems: "center",
-    border: "3px #9EE9F8 solid"
-  }
-};
+import { style } from "../../styles/custom-styles";
+
+import electronLogo from "../../../assets/logos/electron.png";
+import chromiumLogo from "../../../assets/logos/chromium.png";
+import nodeLogo from "../../../assets/logos/node.png";
+
 export default class AboutElectron3 extends Component {
   constructor() {
     super();
@@ -32,15 +17,15 @@ export default class AboutElectron3 extends Component {
     return (
       <div style={style.main}>
         <Heading size={6} textColor="secondary">Sobre Electron</Heading>
-        <div style={style.content}>
-          <div style={style.logos}>
-            <Logo backgroundColor="#F0DB4F" textColor="black" size={180} fontSize={30} text="CR" />
+        <div style={style.logos}>
+          <div style={{ ...style.containerBackground, display: "flex", alignItems: "center" }}>
+            <img style={{ ...style.pixelImage, height: 180 }} src={chromiumLogo} />
             +
-            <Logo backgroundColor="#F0DB4F" textColor="black" size={180} fontSize={30} text="NO" />
+            <img style={{ ...style.pixelImage, height: 180 }} src={nodeLogo} />
           </div>
           &nbsp;&nbsp;=
           &nbsp;
-          <Logo backgroundColor="#9EE9F8" textColor="black" size={180} fontSize={30} text="EL" />
+          <img style={{ ...style.pixelImage, height: 250 }} src={electronLogo} />
         </div>
       </div>
     );

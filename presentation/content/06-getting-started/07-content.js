@@ -8,6 +8,8 @@ import { createSteppedEasing } from "../../utils";
 
 import anime from "animejs";
 
+import electronLogo from "../../../assets/logos/electron.png";
+
 export const runDistributingAnimation = () => {
   const timeline = anime.timeline();
   anime({
@@ -97,8 +99,8 @@ export class GettingStarted7 extends Component {
               </div>
 
             </div>
-            <div id="electron-icon" style={{ position: "relative", top: -48 }}>
-              <Bullet type="module" size={70} color="#9EE9F8" />
+            <div id="electron-icon" style={{ position: "relative", top: -46 }}>
+              <img style={{ ...style.pixelImage, height: 80, backgroundColor: "#10162A" }} src={electronLogo} />
             </div>
             <div id="files-section">
               <Bullet type="file" size={70} color="#67B1BE" />

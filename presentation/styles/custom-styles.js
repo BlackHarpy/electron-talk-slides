@@ -79,5 +79,21 @@ export const style = {
     height: 70,
     imageRendering: "pixelated",
     margin: "0 20px"
+  },
+  logos: {
+    marginTop: 100,
+    display: "flex",
+    justifyContent: "center",
+    alignItems: "center"
+  },
+  logoColumn: {
+    display: "flex",
+    flexDirection: "column"
+  },
+  containerBackground: {
+    backgroundColor: "#10506f",
+    padding: 20,
+    margin: "20px 10px",
+    border: "3px #9EE9F8 solid"
   }
 };

@@ -22,7 +22,7 @@ export default class AboutMe1 extends Component {
       <div>
         <Heading size={6} textColor="secondary">Sobre mí</Heading>
         <Appear>
-          <div>
+          <div style={{ marginTop: 60 }}>
             <Text textFont="secondary" textColor="tertiary" fill fit>Fullstack Developer - SimpliRoute</Text>
             <Text textFont="secondary" textColor="#1c556f" textSize={70} fill fit>
               <span style={{ color: "#87BD3E" }}>Ext JS</span> <Bullet type="circle1" size={10} />

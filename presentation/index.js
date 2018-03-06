@@ -57,45 +57,45 @@ const theme = createTheme({
 export default class Presentation extends React.Component {
   render() {
     return (
-      <Deck transition={["fade"]} transitionDuration={500} theme={theme}>
-        <Slide transition={["none"]} transitionDuration={2000} onActive={titleAnimation}>
+      <Deck transition={["none"]} transitionDuration={500} theme={theme}>
+        <Slide transitionDuration={2000} onActive={titleAnimation}>
           <Title />
         </Slide>
-        <Slide transitionIn={["slide"]} transitionOut={["fade"]}>
+        <Slide align="center flex-start">
           <AboutMe1 />
         </Slide>
         <Slide>
           <AboutMe2 />
         </Slide>
-        <Slide transitionIn={["slide"]} transitionOut={["fade"]}>
+        <Slide align="center flex-start">
           <AboutElectron1 />
         </Slide>
-        <Slide>
+        <Slide align="center flex-start">
           <AboutElectron2 />
         </Slide>
-        <Slide>
+        <Slide align="center flex-start">
           <AboutElectron3 />
         </Slide>
-        <Slide>
+        <Slide align="center flex-start">
           <AboutElectron4 />
         </Slide>
-        <Slide>
+        <Slide align="center flex-start">
           <Why1 />
         </Slide>
-        <Slide transitionOut={["none"]} align="center flex-start">
+        <Slide align="center flex-start">
           <Architecture1 />
         </Slide>
-        <Slide bgColor="primary" textColor="tertiary" transition={["none"]} align="center flex-start"
+        <Slide bgColor="primary" textColor="tertiary" align="center flex-start"
           onActive={runMainProcessAnimation}
         >
           <Architecture2 />
         </Slide>
-        <Slide transition={["none"]} align="center flex-start"
+        <Slide align="center flex-start"
           onActive={runRendererProcessAnimation}
         >
           <Architecture3 />
         </Slide>
-        <Slide transition={["fade"]} align="center flex-start">
+        <Slide align="center flex-start">
           <Architecture4 />
         </Slide>
         <Slide align="center flex-start"
@@ -103,42 +103,42 @@ export default class Presentation extends React.Component {
         >
           <GettingStarted1 />
         </Slide>
-        <Slide align="center flex-start" transition={["none"]}
+        <Slide align="center flex-start"
           onActive={runPackageJsonAnimation}
         >
           <GettingStarted2 />
         </Slide>
-        <Slide align="center flex-start" transition={["none"]}
+        <Slide align="center flex-start"
           onActive={runMainFileAnimation}
         >
           <GettingStarted3 />
         </Slide>
-        <Slide align="center flex-start" transition={["none"]}
+        <Slide align="center flex-start" 
           onActive={runHTMLFileAnimation}
         >
           <GettingStarted4 />
         </Slide>
-        <Slide align="center flex-start" transition={["none"]}
+        <Slide align="center flex-start"
           onActive={runCommunicationAnimation}
         >
           <GettingStarted5 />
         </Slide>
-        <Slide align="center flex-start" transition={["none"]}
+        <Slide align="center flex-start"
           onActive={runCommunicationMethodsAnimation}
         >
           <GettingStarted6 />
         </Slide>
-        <Slide align="center flex-start" transition={["none"]}
+        <Slide align="center flex-start"
           onActive={runDistributingAnimation}
         >
           <GettingStarted7 />
         </Slide>
-        <Slide align="center flex-start" transition={["none"]}
+        <Slide align="center flex-start"
           onActive={runPackagesAnimation}
         >
           <GettingStarted8 />
         </Slide>
-        <Slide align="center flex-start" transition={["none"]}
+        <Slide align="center flex-start"
           onActive={runInterestingLinksAnimation}
         >
           <TheEnd1 />
