@@ -55,11 +55,6 @@ export class Why1 extends Component {
             </Appear>
             <Appear>
               <div style={styleImg}>
-                <img src="https://image.ibb.co/m1bP7n/roast_5.png" width="600" alt="roast_2" border="0" />
-              </div>
-            </Appear>
-            <Appear>
-              <div style={styleImg}>
                 <img src="https://image.ibb.co/hftt07/roast_7.png" height="480" alt="roast_2" border="0" />
               </div>
             </Appear>
