@@ -27,7 +27,8 @@ export default class Bullet extends Component {
       arrow: "È",
       xmark: "n",
       computer: "Ñ",
-      application: "™"
+      application: "™",
+      shine: "@"
     };
     return handler[this.props.type];
   }

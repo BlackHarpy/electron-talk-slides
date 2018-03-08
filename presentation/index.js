@@ -4,11 +4,11 @@ import "./styles/code-theme.css";
 
 import { Title, titleAnimation } from "./content/01-title/01-content";
 import AboutMe1 from "./content/02-about-me/01-content-1";
-import AboutMe2 from "./content/02-about-me/02-content-2";
-import AboutElectron1 from "./content/03-about-electron/01-content";
-import AboutElectron2 from "./content/03-about-electron/02-content";
-import AboutElectron3 from "./content/03-about-electron/03-content";
-import AboutElectron4 from "./content/03-about-electron/04-content";
+import { AboutMe2, startLoveAnimation} from "./content/02-about-me/02-content-2";
+import { AboutElectron1, startWhatIsElectronAnimation } from "./content/03-about-electron/01-content";
+import { AboutElectron2, startElectronFeaturesAnimation } from "./content/03-about-electron/02-content";
+import {AboutElectron3, startElectronEnvAnimation} from "./content/03-about-electron/03-content";
+import { AboutElectron4, startAppsElectronAnimation } from "./content/03-about-electron/04-content";
 
 import { Why1 } from "./content/04-why/01-content";
 import { Why2, runGoodStuffAnimation } from "./content/04-why/02-content";
@@ -66,19 +66,19 @@ export default class Presentation extends React.Component {
         <Slide align="center flex-start">
           <AboutMe1 />
         </Slide>
-        <Slide>
+        <Slide onActive={startLoveAnimation}>
           <AboutMe2 />
         </Slide>
-        <Slide align="center flex-start">
+        <Slide align="center flex-start" onActive={startWhatIsElectronAnimation}>
           <AboutElectron1 />
         </Slide>
-        <Slide align="center flex-start">
+        <Slide align="center flex-start" onActive={startElectronFeaturesAnimation}>
           <AboutElectron2 />
         </Slide>
-        <Slide align="center flex-start">
+        <Slide align="center flex-start" onActive={startElectronEnvAnimation}>
           <AboutElectron3 />
         </Slide>
-        <Slide align="center flex-start">
+        <Slide align="center flex-start" onActive={startAppsElectronAnimation}>
           <AboutElectron4 />
         </Slide>
         <Slide align="center flex-start">

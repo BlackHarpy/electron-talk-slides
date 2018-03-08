@@ -21,7 +21,7 @@ export const titleAnimation = () => {
     opacity: [0, 1],
     easing: createSteppedEasing(3),
     duration: 200,
-    offset: "+=500"
+    offset: "+=2000"
   }).add({
     targets: ["#main-title-container"],
     height: [0, 626],
@@ -71,13 +71,6 @@ export const titleAnimation = () => {
     easing: createSteppedEasing(5),
     offset: "+=500"
   });
-
-  // anime({
-  //   targets: "#main-content",
-  //   opacity: [0, 1],
-  //   easing: createSteppedEasing(4),
-  //   duration: 500
-  // });
 };
 
 export class Title extends Component {

@@ -2,7 +2,6 @@ import React, { Component } from "react";
 import { Heading } from "spectacle";
 
 import Bullet from "../../pixel-elements/bullets";
-import Logo from "../../pixel-elements/logo";
 
 import { style } from "../../styles/custom-styles";
 
@@ -12,8 +11,19 @@ import whatsappLogo from "../../../assets/logos/whatsapp.png";
 import postmanLogo from "../../../assets/logos/postman.png";
 import vscodeLogo from "../../../assets/logos/vscode.png";
 
+import {createSteppedEasing} from "../../utils";
+import anime from "animejs";
 
-export default class AboutElectron4 extends Component {
+export const startAppsElectronAnimation = () => {
+  anime({
+    targets: ["#apps-electron"],
+    opacity: [0, 1],
+    duration: 500,
+    easing: createSteppedEasing(3)
+  });
+};
+
+export class AboutElectron4 extends Component {
   constructor() {
     super();
   }
@@ -21,7 +31,7 @@ export default class AboutElectron4 extends Component {
     return (
       <div style={style.main}>
         <Heading size={6} textColor="secondary">Sobre Electron</Heading>
-        <div style={{ ...style.content, flexDirection: "row", marginTop: 40 }}>
+        <div id="apps-electron" style={{ ...style.content, flexDirection: "row", marginTop: 40 }}>
           <div style={{ ...style.containerBackground, display: "flex" }}>
             <div style={style.logoColumn}>
               <img style={{ ...style.pixelImage, height: 120, margin: 10 }} src={slackLogo} />
@@ -35,7 +45,6 @@ export default class AboutElectron4 extends Component {
           <div style={{ ...style.logos, marginLeft: 90, marginTop: 0 }}>
             <Bullet type="heart" size={120} color="#bc32d4" />&nbsp;&nbsp;
             <img style={{ ...style.pixelImage, height: 180 }} src={electronLogo} />
-            
           </div>
         </div>
       </div>
